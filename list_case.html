@@ -1,0 +1,84 @@
+<html>
+
+<head>
+</head>
+
+<title>YOLO EZ-Life</title>
+<style type="text/css">
+#right {
+    width: -moz-calc(100% - 300px);
+    width: -webkit-calc(100% - 300px);
+    width: calc(100% - 300px);
+}​
+
+.c1{
+background:#CCCCCC;
+position:relative;
+width:375px;
+height:150px;
+font-weight: bold;
+margin: auto auto;
+}
+</style>
+
+<body>
+<div id="block" style="width:95%; height:90%; position: static; float: middle;">
+
+   	<div id="left" style="position: fixed; float:left; left:30; width:250px; height:85%;"> 
+
+   		<div id="menu" align="left">
+			
+			<iframe src="menu.html" height="500" scrolling="no" frameBorder="no" seamless></iframe>
+   		</div>
+   		
+   	</div>
+   
+   
+   	<div id="right" style=" position: static; float:right; height:95%; padding:10px;">
+	
+		<h1 align="center"> <font size="100">Change Password</font></h1>
+	
+		<div class="c1" style="overflow-y: scroll;">
+
+<!--conetent starts -->		
+		<form action="process_change_password.php" method="post" id="change_password" name="change_password">
+
+<!--fererence	
+		<table cellpadding="5px" align="center">
+		   <tr><td align="right"><b>Patient ID: </b></td><td>0001387</td></tr>
+		   <tr><td align="right"><b>Patient Name: </b></td><td>Hong Siew Mei</td></tr>
+		   <tr><td align="right"><b>Gender: </b></td><td>Female</td></tr>
+		   <tr><td align="right"><b>DOB: </b></td><td>01 February 1988</td></tr>
+		   <tr><td align="right"><b>NRIC: </b></td><td>S1234567A</td></tr>
+		   <tr><td align="right"><b>Telephone:</b> </td><td>67891234</td></tr>
+		</table>		   
+ -->
+ 
+		<table width="70%" cellpadding="5px" align="center">
+		   
+		   
+		   <tr bgcolor="#CCFFFF"><th width="200">List of Events</th>
+		   <th>By Type<select>
+		   				<option value="volvo">Fire</option>
+  						<option value="saab">Dengue</option>
+  						<option value="saab">Other</option></select></th>
+  		   <th>By Location<select>
+  		   <option value="ne">NorthEast</option>
+  		   <option value="se">SouthEast</option>
+  		   <option value="c">Central</option>
+  		   <option value="nw">NorthWest</option>
+  		   <option value="sw">SouthWest</option>
+  		   </select></th></tr>
+		   <tr><td align="center">25/09/2014<br>Dengue<br>NorthEast</td><td colspan="2">Dengue Fever<br>Jurong Area<br>A few cases were found.... please pay attention</td></tr>
+		   
+		</table>
+		<p align="center"><button style="background-color:white; padding:5px; border-radius:10px" onclick="location.href = 'add_appointment.php'">Add Appointment</button></p>
+		<br>
+		
+		</form>
+<!--conetent ends -->		
+		</div> 
+   	</div>
+</div>
+</body>
+</html>
