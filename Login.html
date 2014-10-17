@@ -1,11 +1,11 @@
 <html>
-<title>ACE Crisis Management System</title>
+<title>YOLO EZ-Life</title>
 <style type="text/css">
 #right {
     width: -moz-calc(100% - 300px);
     width: -webkit-calc(100% - 300px);
     width: calc(100% - 300px);
-}?
+}​
 
 .c1{
 background:#CCCCCC;
@@ -21,8 +21,8 @@ margin: auto auto;
 
    	<div id="left" style="position: fixed; float:left; left:30; width:250px; height:85%;"> 
 
-   		<div id="logo" align="left" style="width:200px;background:#F9EECF;border:1px line black;text-align:center">
-			Here is the Menu
+   		<div id="menu" align="left">
+			<iframe src="menu.html" height="500" scrolling="no" frameBorder="no" seamless></iframe>
    		</div>
    		
    	</div>
@@ -30,17 +30,17 @@ margin: auto auto;
    
    	<div id="right" style=" position: static; float:right; height:95%; padding:10px;">
 	
-		<h1 align="left"> <font size="100">&nbsp&nbsp&nbsp&nbspLog In</font></h1>
+		<h1 align="center"> <font size="100">Change Password</font></h1>
 	
 		<div class="c1">
-		<form action="login.php" method="post" id="login" name="login">
+		<form action="process_change_password.php" method="post" id="change_password" name="change_password">
 		   <table cellpadding="5px" align="center">
-		   <tr><td align="right"><b>Account: </b></td><td><input type="text" name="account" id="account"/></td></tr>
-		   <tr><td align="right"><b>Password: </b></td><td><input type="password" name="password" id="password"/></td></tr>
-		   <tr><td align="right"><input type="checkbox" name="save_info" value="remember">Remember me!</td><td align="right"><input type="reset" value="Reset" style="background-color:white; padding:5px; border-radius:8px">&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Login" style="background-color:white; padding:5px; border-radius:8px"></td></tr>
+		   <tr><td align="right"><b>Old Password:</b></td><td><input type="password" name="old_password" id="old_password"/></td></tr>
+		   <tr><td align="right"><b>New Password:</b></td><td><input type="password" name="password" id="password"/></td></tr>
+		   <tr><td align="right"><b>Confirm Password:</b></td><td><input type="password" name="password2"></td></tr>
+		   <tr><td></td><td align="center"><button style="background-color:white; padding:5px; border-radius:10px">Cancel</button>&nbsp&nbsp&nbsp&nbsp<input type="submit" value="Submit" style="background-color:white; padding:5px; border-radius:10px"></td></tr>
 		   </table>
 		</form>
-		<p align = "center"> Do not have an account? <a href="register.html">Register NOW!</a></p>
 		</div>
 		 
    	</div>
